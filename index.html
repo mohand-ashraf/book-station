@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imgs/favicon.png" type="image/x-icon">
+    <title>Book Station</title>
+</head>
+<body>
+
+    <!-- start header -->
+    <header class="header" id="header">
+        <div class="header-container container">
+            <div class="header-logo">
+                <a href="#home">
+                    <img src="imgs/favicon.png" alt="image" class="header-img">
+                    <span>E-Book</span>
+                </a>
+            </div>
+            <div class="header-content">
+                <div class="header-nav">
+                    <ul>
+                        <li>
+                            <a href="#home" class="active">Home</a>
+                        </li>
+                        <li>
+                            <a href="#featured">Featured</a>
+                        </li>
+                        <li>
+                            <a href="#discount">Discount</a>
+                        </li>
+                        <li>
+                            <a href="#new-books">New Books</a>
+                        </li>
+                        <li>
+                            <a href="#testimonial">Testimonial</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-icons">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass" id="searchBtn"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-regular fa-user" id="userBtn"></i>
+                    </a>
+                    <a href="#" onclick="toggleDarkMode()">
+                        <i class="fa-regular fa-moon" id="toggle-button"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="header-down container">
+        <div class="down-icons">
+            <a href="#home">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="#featured">
+                <i class="fa-solid fa-book"></i>
+            </a>
+            <a href="#discount">
+                <i class="fa-solid fa-tag"></i>
+            </a>
+            <a href="#new-books">
+                <i class="fa-regular fa-bookmark"></i>
+            </a>
+            <a href="#testimonial">
+                <i class="fa-regular fa-message"></i>
+            </a>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start search button -->
+    <div class="model" id="searchModel">
+        <div class="model-content">
+            <span class="search-close">&times;</span>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="What are you looking for?">
+        </div>
+    </div>
+    <!-- end search button-->
+
+    <!-- start profile button -->
+    <div class="user-model" id="userModel">
+        <div class="user-content">
+            <span class="user-close">&times;</span>
+            <h3>Log In</h3>
+            <label for="email" class="email">E-mail</label>
+            <input type="email" placeholder="Write Your Email" id="email">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Write Your Password" id="password">
+            <p>You do not have an account? <a href="#">Sign up</a></p>
+            <p>You forget your password</p>
+            <button>Log In </button>
+        </div>
+    </div>
+    <!-- end profile button -->
+
+    <!-- start home -->
+    <div class="home-container container" id="home">
+        <div class="home-content">
+            <h1>Browse & <br> Select E-Books</h1>
+            <p>Find the best e-books from your favorite 
+                writers, explore hundreds of books with all 
+                possible categories, take advantage of the 
+                50% discount and much more. 
+            </p>
+            <button>Explore Now</button>
+        </div>
+        <div class="swiper-section">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="imgs/home-book-1.png" alt="image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/home-book-2.png" alt="image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/home-book-3.png" alt="image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/home-book-4.png" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end home -->
+    
+    <!-- start icons -->
+    <div class="icons-container container">
+        <div class="icon">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h4>Free Shipping</h4>
+            <p>Order More Than $100</p>
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-lock"></i>
+            <h4>Secure Payment</h4>
+            <p>100% Secure Payment</p>
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-headset"></i>
+            <h4>24/7 Support</h4>
+            <p>Call us anytime</p>
+        </div>
+    </div>
+    <!-- end icons -->
+    
+    <!-- start featured -->
+    <div class="featured-container container" id="featured">
+        <h1>Featured Books</h1>
+        <div class="featured-swiper">
+            <div class="book-boxes swiper">
+                <div class="swiper-wrapper">
+                    <div class="box swiper-slide">
+                        <div class="featured-icons">
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                        <img src="imgs/book-1.png" alt="images">
+                        <h4>Featured Book</h4>
+                        <span class="first">$11.9</span>
+                        <span class="second">$19.99</span>
+                        <button>Add To Cart</button>
+                    </div>
+                    <div class="box swiper-slide">
+                        <div class="featured-icons">
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                        <img src="imgs/book-2.png" alt="images">
+                        <h4>Featured Book</h4>
+                        <span class="first">$11.9</span>
+                        <span class="second">$19.99</span>
+                        <button>Add To Cart</button>
+                    </div>
+                    <div class="box swiper-slide">
+                        <div class="featured-icons">
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                        <img src="imgs/book-3.png" alt="images">
+                        <h4>Featured Book</h4>
+                        <span class="first">$11.9</span>
+                        <span class="second">$19.99</span>
+                        <button>Add To Cart</button>
+                    </div>
+                    <div class="box swiper-slide">
+                        <div class="featured-icons">
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                        <img src="imgs/book-4.png" alt="images">
+                        <h4>Featured Book</h4>
+                        <span class="first">$11.9</span>
+                        <span class="second">$19.99</span>
+                        <button>Add To Cart</button>
+                    </div>
+                    <div class="box swiper-slide">
+                        <div class="featured-icons">
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                        <img src="imgs/book-5.png" alt="images">
+                        <h4>Featured Book</h4>
+                        <span class="first">$11.9</span>
+                        <span class="second">$19.99</span>
+                        <button>Add To Cart</button>
+                    </div>
+                    <div class="box swiper-slide">
+                        <div class="featured-icons">
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                        <img src="imgs/book-6.png" alt="images">
+                        <h4>Featured Book</h4>
+                        <span class="first">$11.9</span>
+                        <span class="second">$19.99</span>
+                        <button>Add To Cart</button>
+                    </div>
+                    <div class="box swiper-slide">
+                        <div class="featured-icons">
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                        <img src="imgs/book-7.png" alt="images">
+                        <h4>Featured Book</h4>
+                        <span class="first">$11.9</span>
+                        <span class="second">$19.99</span>
+                        <button>Add To Cart</button>
+                    </div>
+                    <div class="box swiper-slide">
+                        <div class="featured-icons">
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                        <img src="imgs/book-8.png" alt="images">
+                        <h4>Featured Book</h4>
+                        <span class="first">$11.9</span>
+                        <span class="second">$19.99</span>
+                        <button>Add To Cart</button>
+                    </div>
+                    <div class="box swiper-slide">
+                        <div class="featured-icons">
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                        <img src="imgs/book-9.png" alt="images">
+                        <h4>Featured Book</h4>
+                        <span class="first">$11.9</span>
+                        <span class="second">$19.99</span>
+                        <button>Add To Cart</button>
+                    </div>
+                    <div class="box swiper-slide">
+                        <div class="featured-icons">
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                        <img src="imgs/book-10.png" alt="images">
+                        <h4>Featured Book</h4>
+                        <span class="first">$11.9</span>
+                        <span class="second">$19.99</span>  
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end featured -->
+
+    <!-- start discount -->
+    <div class="discount-container container" id="discount">
+        <div class="discount-image">
+            <img src="imgs/discount-book-1.png" alt="image" class="discount-image-1">
+            <img src="imgs/discount-book-2.png" alt="image" class="discount-image-2">
+        </div>
+        <div class="discount-content">
+            <h1>Up To 50% Discount</h1>
+            <p>Take advantage of the discount days we have for you,
+                buy books from your favorite writers, the more you 
+                buy, the more discounts we have for you.
+            </p>
+            <button>Shop Now</button>
+        </div>
+    </div>
+    <!-- end discount -->
+
+    <!-- start new-book -->
+    <div class="new-container container" id="new-books">
+        <h1>New Books</h1>
+        <div class="new-swiper">
+            <div class="new-book swiper">
+                <div class="swiper-wrapper">
+                    <div class="new-box swiper-slide">
+                        <div class="img">
+                            <img src="imgs/book-2.png" alt="image">
+                        </div>
+                        <div class="new-content">
+                            <h4>New Book</h4>
+                            <span class="new">$7.99</span>
+                            <span class="old">$14.99</span>
+                            <div class="book-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-box swiper-slide">
+                        <div class="img">
+                            <img src="imgs/book-1.png" alt="image">
+                        </div>
+                        <div class="new-content">
+                            <h4>New Book</h4>
+                            <span class="new">$7.99</span>
+                            <span class="old">$14.99</span>
+                            <div class="book-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-box swiper-slide">
+                        <div class="img">
+                            <img src="imgs/book-6.png" alt="image">
+                        </div>
+                        <div class="new-content">
+                            <h4>New Book</h4>
+                            <span class="new">$7.99</span>
+                            <span class="old">$14.99</span>
+                            <div class="book-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-box swiper-slide">
+                        <div class="img">
+                            <img src="imgs/book-8.png" alt="image">
+                        </div>
+                        <div class="new-content">
+                            <h4>New Book</h4>
+                            <span class="new">$7.99</span>
+                            <span class="old">$14.99</span>
+                            <div class="book-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-box swiper-slide">
+                        <div class="img">
+                            <img src="imgs/book-4.png" alt="image">
+                        </div>
+                        <div class="new-content">
+                            <h4>New Book</h4>
+                            <span class="new">$7.99</span>
+                            <span class="old">$14.99</span>
+                            <div class="book-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-box swiper-slide">
+                        <div class="img">
+                            <img src="imgs/book-10.png" alt="image">
+                        </div>
+                        <div class="new-content">
+                            <h4>New Book</h4>
+                            <span class="new">$7.99</span>
+                            <span class="old">$14.99</span>
+                            <div class="book-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-box swiper-slide">
+                        <div class="img">
+                            <img src="imgs/book-3.png" alt="image">
+                        </div>
+                        <div class="new-content">
+                            <h4>New Book</h4>
+                            <span class="new">$7.99</span>
+                            <span class="old">$14.99</span>
+                            <div class="book-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-box swiper-slide">
+                        <div class="img">
+                            <img src="imgs/book-5.png" alt="image">
+                        </div>
+                        <div class="new-content">
+                            <h4>New Book</h4>
+                            <span class="new">$7.99</span>
+                            <span class="old">$14.99</span>
+                            <div class="book-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-box swiper-slide">
+                        <div class="img">
+                            <img src="imgs/book-7.png" alt="image">
+                        </div>
+                        <div class="new-content">
+                            <h4>New Book</h4>
+                            <span class="new">$7.99</span>
+                            <span class="old">$14.99</span>
+                            <div class="book-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-box swiper-slide">
+                        <div class="img">
+                            <img src="imgs/book-9.png" alt="image">
+                        </div>
+                        <div class="new-content">
+                            <h4>New Book</h4>
+                            <span class="new">$7.99</span>
+                            <span class="old">$14.99</span>
+                            <div class="book-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="new-swiper">
+            <div class="new-book swiper">
+                <div class="swiper-wrapper">
+                    <div class="new-box swiper-slide">
+                        <div class="img">
+                            <img src="imgs/book-10.png" alt="image">
+                        </div>
+                        <div class="new-content">
+                            <h4>New Book</h4>
+                            <span class="new">$7.99</span>
+                            <span class="old">$14.99</span>
+                            <div class="book-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-box swiper-slide">
+                        <div class="img">
+                            <img src="imgs/book-7.png" alt="image">
+                        </div>
+                        <div class="new-content">
+                            <h4>New Book</h4>
+                            <span class="new">$7.99</span>
+                            <span class="old">$14.99</span>
+                            <div class="book-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-box swiper-slide">
+                        <div class="img">
+                            <img src="imgs/book-4.png" alt="image">
+                        </div>
+                        <div class="new-content">
+                            <h4>New Book</h4>
+                            <span class="new">$7.99</span>
+                            <span class="old">$14.99</span>
+                            <div class="book-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-box swiper-slide">
+                        <div class="img">
+                            <img src="imgs/book-1.png" alt="image">
+                        </div>
+                        <div class="new-content">
+                            <h4>New Book</h4>
+                            <span class="new">$7.99</span>
+                            <span class="old">$14.99</span>
+                            <div class="book-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-box swiper-slide">
+                        <div class="img">
+                            <img src="imgs/book-9.png" alt="image">
+                        </div>
+                        <div class="new-content">
+                            <h4>New Book</h4>
+                            <span class="new">$7.99</span>
+                            <span class="old">$14.99</span>
+                            <div class="book-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-box swiper-slide">
+                        <div class="img">
+                            <img src="imgs/book-6.png" alt="image">
+                        </div>
+                        <div class="new-content">
+                            <h4>New Book</h4>
+                            <span class="new">$7.99</span>
+                            <span class="old">$14.99</span>
+                            <div class="book-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-box swiper-slide">
+                        <div class="img">
+                            <img src="imgs/book-3.png" alt="image">
+                        </div>
+                        <div class="new-content">
+                            <h4>New Book</h4>
+                            <span class="new">$7.99</span>
+                            <span class="old">$14.99</span>
+                            <div class="book-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-box swiper-slide">
+                        <div class="img">
+                            <img src="imgs/book-8.png" alt="image">
+                        </div>
+                        <div class="new-content">
+                            <h4>New Book</h4>
+                            <span class="new">$7.99</span>
+                            <span class="old">$14.99</span>
+                            <div class="book-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-box swiper-slide">
+                        <div class="img">
+                            <img src="imgs/book-5.png" alt="image">
+                        </div>
+                        <div class="new-content">
+                            <h4>New Book</h4>
+                            <span class="new">$7.99</span>
+                            <span class="old">$14.99</span>
+                            <div class="book-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-box swiper-slide">
+                        <div class="img">
+                            <img src="imgs/book-2.png" alt="image">
+                        </div>
+                        <div class="new-content">
+                            <h4>New Book</h4>
+                            <span class="new">$7.99</span>
+                            <span class="old">$14.99</span>
+                            <div class="book-icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start new-book -->
+
+    <!-- start join -->
+    <div class="join-container">
+        <h1>Subscribe To Receive <br> The Latest Updates</h1>
+        <input type="email" placeholder="Enter Email">
+        <button>Subscribe</button>
+    </div>
+    <!-- end join -->
+
+    <!-- start customers -->
+    <div class="customers-container container" id="testimonial">
+        <h1>Customers Opinions</h1>
+        <div class="customers-swiper">
+            <div class="customers swiper">
+                <div class="swiper-wrapper">
+                    <div class="opinion swiper-slide">
+                        <img src="imgs/testimonial-perfil-1.png" alt="image">
+                        <h4>Rial Loz</h4>
+                        <p>
+                            The best website to buy books, the purchase is 
+                            very easy to make and has great discounts.
+                        </p>
+                        <div class="book-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                    <div class="opinion swiper-slide">
+                        <img src="imgs/testimonial-perfil-2.png" alt="image">
+                        <h4>Rial Loz</h4>
+                        <p>
+                            The best website to buy books, the purchase is 
+                            very easy to make and has great discounts.
+                        </p>
+                        <div class="book-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                    <div class="opinion swiper-slide">
+                        <img src="imgs/testimonial-perfil-3.png" alt="image">
+                        <h4>Rial Loz</h4>
+                        <p>
+                            The best website to buy books, the purchase is 
+                            very easy to make and has great discounts.
+                        </p>
+                        <div class="book-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                    <div class="opinion swiper-slide">
+                        <img src="imgs/testimonial-perfil-4.png" alt="image">
+                        <h4>Rial Loz</h4>
+                        <p>
+                            The best website to buy books, the purchase is 
+                            very easy to make and has great discounts.
+                        </p>
+                        <div class="book-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end customers -->
+    
+    <!-- start footer -->
+    <div class="footer container">
+        <div class="footer-container">
+            <div class="footer-first">
+                <div class="footer-content">
+                    <img src="imgs/favicon.png" alt="image">
+                    <span>E-Book</span>
+                </div>
+                <p>Find and explore the best <br> E-Book from all your <br> favorite writers.</p>
+            </div>
+            <div class="footer-second">
+                <h4>About</h4>
+                <ul>
+                    <li>Awards</li>
+                    <li>FAQS</li>
+                    <li>Privacy policy</li>
+                    <li>Terms of services</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <h4>Company</h4>
+                <ul>
+                    <li>Blogs</li>
+                    <li>Community</li>
+                    <li>Our team</li>
+                    <li>Help center</li>
+                </ul>
+            </div>
+            <div class="footer-four">
+                <h4>Contact</h4>
+                <p>Talbia Faisal Giza, Egypt</p>
+                <p>E-book@email.com</p>
+                <p>01159424411</p>
+            </div>
+            <div class="footer-social">
+                <h4>Social</h4>
+                <a href="https://www.facebook.com/mohand.ashraf.737?mibextid=ZbWKwL" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/mohand.ashraf.737?igsh=NWR6dXc1NGJiOHp4" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://x.com/Mohand1647723?t=Gupqjrz9FHZwQC9pQUFdzA&s=09" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <span>
+                &#169; All Rights Reserved by Mohand Ashraf
+            </span>
+        </div>
+    </div>
+    <!-- end footer -->
+    
+    <!-- strat scroll up -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <!-- end scroll up -->
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/master.js"></script>
+</body>
+</html>
